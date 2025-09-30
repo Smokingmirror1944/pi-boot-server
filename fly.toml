@@ -1,0 +1,16 @@
+app = "pi-boot-server"
+
+[build]
+  builder = "Docker"
+
+[env]
+  PORT = "8080"
+
+[[services]]
+  protocol = "tcp"
+  internal_port = 8080
+  ports = [
+    { port = 80 }
+  ]
+  auto_stop_machines = true
+  auto_start_machines = true
