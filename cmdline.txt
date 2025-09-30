@@ -1,0 +1,1 @@
+console=serial0,115200 console=tty1 root=/dev/nfs nfsroot=192.168.1.64:/nfsroot,nfsvers=4.1,rw ip=dhcp rootwait
